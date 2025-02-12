@@ -1,0 +1,122 @@
+.availabiltyCheckContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    padding-block: 30px;
+}
+
+.availabiltyCheckContainer select,
+.availabiltyCheckContainer .inputForm,
+.availabiltyCheckContainer button {
+    border: none;
+    border-radius: 8px;
+    width: 160px;
+    height: 55px;
+    font-size: 16px;
+    text-align: center;
+    margin-inline: 5px;
+}
+
+.inputForm input[type='date'] {
+    border: none;
+}
+
+.availabiltyCheckContainer button {
+    background-color: #DFAA5B;
+    color: white;
+}
+
+.hotelDetails {
+    position: relative;
+    width: 100%;
+    background-image: url(../../hotel.png);
+    height: 790px;
+    background-size: cover;
+    background-position: center;
+}
+
+.facilities {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: absolute;
+    top: 80%;
+    width: calc(100% - 60px);
+    margin-block: 0;
+    margin-inline: 30px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.facilityItem img {
+    width: 60px;
+    height: 60px;
+    max-width: 100%;
+    height: auto;
+}
+
+.roomsDetails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.standardTwinRoom,
+.standardRoom,
+.standardViewRoom,
+.deluxeRoom {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+
+.standardTwinRoom {
+    background-image: url('../../FqqiAvJejto.png');
+}
+
+.standardRoom {
+    background-image: url('../../room2.png');
+}
+
+.standardViewRoom {
+    background-image: url('../../FqqiAvJejto.png');
+}
+
+.deluxeRoom {
+    background-image: url('../../room2.png');
+}
+
+.roomBooking button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #bf8f44;
+}
+
+@media (max-width: 768px) {
+    .availabiltyCheckContainer select,
+    .availabiltyCheckContainer .inputForm,
+    .availabiltyCheckContainer button {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .roomsDetails {
+        grid-template-columns: 1fr;
+    }
+}
